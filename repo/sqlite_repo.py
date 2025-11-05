@@ -5,4 +5,6 @@ from domain.interfaces import ITurnoRepository
 from domain.models import Turno, Cliente, Servicio
 
 class SQLiteRepository(ITurnoRepository):
+    def get_turnos_ocupados(self, fecha):
+        pass
     pass

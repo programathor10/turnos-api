@@ -3,6 +3,10 @@
 from pydantic import BaseModel
 
 class Turno(BaseModel):
+    nombre_cliente: str
+    telefono_cliente: str
+    fecha_turno: str
+    hora_turno: str
     pass
 
 class Cliente(BaseModel):
@@ -10,3 +14,7 @@ class Cliente(BaseModel):
 
 class Servicio(BaseModel):
     pass
+
+class disponibilidad(BaseModel):
+    fecha: str
+    turnos: list[str]
