@@ -7,6 +7,8 @@ class Turno(BaseModel):
     telefono_cliente: str
     fecha_turno: str
     hora_turno: str
+    servicio: str
+    estado: str #reservado
     pass
 
 class Cliente(BaseModel):
@@ -15,6 +17,6 @@ class Cliente(BaseModel):
 class Servicio(BaseModel):
     pass
 
-class disponibilidad(BaseModel):
+class disponibilidadResponde(BaseModel):
     fecha: str
-    turnos: list[str]
+    libres: list[str]
