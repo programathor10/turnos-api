@@ -1,0 +1,21 @@
+
+# Entorno
+.env
+*.env
+!.env.example
+
+# Base de datos local
+turnos.db
+
+# Compilados Python
+__pycache__/
+*.pyc
+
+# Carpetas temporales
+*.log
+*.sqlite3
+*.db
+
+# Módulos instalados localmente
+venv/
+.env/
